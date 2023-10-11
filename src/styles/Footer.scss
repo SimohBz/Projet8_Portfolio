@@ -1,0 +1,43 @@
+@import 'Mixin.scss';
+
+.footer {
+    @include header-footer-common-style;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    margin-top: 50px;
+    height: 110px;
+    p {
+        margin: auto;
+        font-size: 20px;
+    }
+    .contactLink {
+        @include contact-common-style;
+        width: 20%;
+        a {
+            img {
+                background-color: white;
+                border-radius: 7px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .footer {
+        .contactLink {
+            width: 30%;
+        }
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .footer {
+        p {
+            font-size: 14px;
+        }
+        .contactLink {
+            width: 38%;
+        }
+    }
+}

@@ -1,0 +1,240 @@
+@import 'Mixin.scss';
+
+.portfolio {
+    h2 {
+        @include h2-common-style;
+    }
+
+    .portfolioDescription {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .imageProject {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        width: 92%;
+        margin: auto;
+        
+        .portfolioImageContainer {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 450px;
+            box-shadow: 15px 15px 15px rgb(121, 156, 165);
+            border: rgb(53, 80, 124) solid 1px;
+            border-radius: 25px;
+            cursor: pointer;
+            
+            .portfolioImage {
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                margin-bottom: 20px;
+                transition: transform 0.3s;
+                
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+            
+            .overlay {
+                @include overlay-common-style;
+                position: absolute;
+                opacity: 0;
+                transition: opacity 0.3s;
+                
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(121, 156, 165, 0.8);
+                    border-radius: 25px;
+                }
+                
+                .overlayText {
+                    text-align: center;
+                    color: rgb(53, 80, 124);
+                    z-index: 1;
+                    font-weight: bolder;
+                    border-bottom: none;
+                }
+            }
+            
+            &:hover .overlay {
+                opacity: 1;
+            }
+
+        }
+        
+        .portfolioImage:nth-child(4),
+        .portfolioImage:nth-child(5) {
+            grid-column: span 2;
+        }
+
+        .portfolioImageContainer:hover{
+            box-shadow: none;
+        }
+    }
+}
+
+.modalContent {
+    background-color: rgb(53, 80, 124);
+    padding: 25px;
+    border-radius: 25px;
+    position: relative;
+    width: 55%;
+    height: 80%;
+    overflow: auto;
+    text-align: center;
+    outline: none; 
+    h6{
+        color: rgba(121, 156, 165);
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+        margin-bottom: -13px;
+    }
+}
+
+.modalOverlay {
+    @include overlay-common-style;
+    position: fixed;
+    background-color: rgba(53, 56, 76, 0.7);
+    z-index: 999;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.closeButton:hover{
+    background-color: rgba(121, 156, 165);
+    border-radius: 25px;
+    color: white;
+
+}
+
+.modalText {
+    h2 {
+        font-size: 25px;
+        margin-top: 0;
+        margin-bottom: -5px;
+    }
+
+    .modalDescription {
+        p {
+            font-size: 15px;
+            text-align: start;
+            margin-bottom: -15px;
+        }
+
+        ul {
+            padding-inline-start: 0;
+            margin-top: 15px;
+            li {
+               font-size: 15px;
+               text-align: start;
+               color: white;
+            }
+        }
+
+        .buttonConsultation {
+            @include contact-common-style;
+            width: 50%;
+            .codeLink {
+                @include codeLink-common-style;
+                text-decoration: none;
+                padding: 10px 20px;
+                border-radius: 25px;
+                display: inline-block;
+                font-weight: bold;
+                font-size: 11px;
+                text-align: left;
+                position: relative; 
+                overflow: hidden;
+                color: rgba(121, 156, 165);
+            }
+            .codeLink:before,
+            .codeLink:after {
+                @include overlay-common-style;
+                @include codeLink-common-style;
+                content: "Cliquez ici !";
+                position: absolute;
+                transform: translateY(100%);
+            }
+        
+            .codeLink:hover {
+                transform: rotateX(180deg); 
+            }
+        
+            .codeLink:hover:before,
+            .codeLink:hover:after {
+                transform: translateY(0);
+                transform: scaleY(-1);
+                background-color: rgba(121, 156, 165);
+            }
+        }   
+    }
+    h2{
+        padding: 5px;
+        border-bottom: white 1px solid;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .portfolio {
+        .imageProject {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                grid-column-gap: 5%;
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .portfolio {
+        .imageProject {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(5, 1fr);
+            justify-content: center;
+            .portfolioImageContainer {
+                height: 100%;
+            }
+        }
+    }
+
+    .modalText {
+        .modalDescription {
+            .buttonConsultation {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .modalText {
+        .modalDescription {
+            .buttonConsultation {
+                flex-direction: column;
+                .codeLink {
+                    width: 43%;
+                    margin: auto;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    font-size: 16px;
+                    padding: 10px 10px;
+                }
+            }
+        }
+    }
+
+}

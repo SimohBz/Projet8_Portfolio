@@ -1,0 +1,73 @@
+@import 'Mixin.scss';
+
+.contact {
+    h2 {
+        @include h2-common-style;
+        margin-top: 90px;
+    }
+
+    .contactDescription {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 90px;
+    }
+
+    .contactEmail {
+        @include contact-common-style;
+        width: 23%;
+        margin-bottom: 30px;
+        .iconeMail {
+            width: 40px;
+        }
+        .mailTo {
+            @include link-common-style;       
+        }
+    }
+    
+    .contactPhone {
+        @include contact-common-style;
+        width: 16%;
+        margin-bottom: 15px;
+        .iconePhone {
+            width: 40px;
+            height: 41px;
+        }
+        .phoneNumber {
+            font-size: 20px;
+            color: rgb(121, 156, 165);
+        }
+    }
+
+    .localisation {
+        @include contact-common-style;
+        width: 11%;
+        align-items: center;
+        .iconeLocalisation {
+            width: 40px;
+            margin-bottom: 10px;   
+        }
+        .toLocalisation {
+            @include link-common-style;
+        }  
+    }
+}
+
+@media screen and (max-width: 1265px) {
+    .contact {
+        .contactEmail {
+            .mailTo {
+                margin-left: 15px;
+            }
+        }
+        .contactPhone {
+            .phoneNumber {
+                margin-left: 10px;
+            }
+        }
+        .localisation {
+            .toLocalisation {
+                margin-left: 10px;
+            }
+        }
+    }
+}

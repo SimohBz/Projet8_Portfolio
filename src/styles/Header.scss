@@ -1,0 +1,108 @@
+@import 'Mixin.scss';
+
+.header {
+    @include contact-common-style;
+    @include header-footer-common-style;
+    justify-content: space-between;
+
+    .title {
+        font-size: 15px;
+        width: 40%;
+        margin-left: 20px;
+        h1 {
+            font-weight: normal;
+        }
+        h2 {
+            letter-spacing: 1.7px;
+            font-size: 30px;
+            margin-top: -25px;
+            font-weight: bold;
+            color: rgb(121, 156, 165);
+            border-bottom: none;
+        }
+    }
+
+    .navbar {
+        width: 62%;
+        font-size: 30px;
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            padding-inline-start: 0;
+            .navItem {
+                cursor: pointer;
+                transition: color 0.3s ease-in-out;
+                .navItemContent{
+                    &:hover {
+                    color: rgb(121, 156, 165);
+                    }  
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1185px) {
+    .header {
+        flex-direction: column;
+
+        .title {
+            margin: auto;
+            width: 100%;
+            margin-bottom: -20px;
+            h1, h2 {
+                text-align: center;
+            }
+            h2 {
+                margin-left: 0px;
+            }
+        }
+
+        .navbar {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .header {
+        .navbar {
+            font-size: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        .navbar {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .header {
+        .title {
+            h1 {
+                font-size: 25px;
+            }
+            h2 {
+                font-size: 16px;
+                letter-spacing: 7px;
+                margin-top: 3px;
+            }
+        }
+        .navbar {
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .header {
+        .navbar {
+            font-size: 16px;
+        }
+    }
+}
