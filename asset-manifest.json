@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Projet8_Portfolio/static/css/main.ce025a03.css",
+    "main.js": "/Projet8_Portfolio/static/js/main.e4bfaabf.js",
+    "static/media/Kasa.png": "/Projet8_Portfolio/static/media/Kasa.032c772bc87025112a25.png",
+    "static/media/MonPortfolio.png": "/Projet8_Portfolio/static/media/MonPortfolio.c7134d255fd9b9541dc1.png",
+    "static/media/SophieBluel.png": "/Projet8_Portfolio/static/media/SophieBluel.8d1d2b9d861b7cee5594.png",
+    "static/media/NinaCarducci.png": "/Projet8_Portfolio/static/media/NinaCarducci.49310f2beb19251048ec.png",
+    "static/media/mongodb_logo.png": "/Projet8_Portfolio/static/media/mongodb_logo.f57a72c4eb815018a3a7.png",
+    "static/media/css_logo.png": "/Projet8_Portfolio/static/media/css_logo.086def6a5563ff0f47d3.png",
+    "static/media/Booki.png": "/Projet8_Portfolio/static/media/Booki.01c6c68001d80b7437ff.png",
+    "static/media/banner_img.webp": "/Projet8_Portfolio/static/media/banner_img.8c48b389b351a057257c.webp",
+    "static/media/postman_logo.png": "/Projet8_Portfolio/static/media/postman_logo.208a2a2c55eb0b9a14c5.png",
+    "static/media/MonVieuxGrimoire.png": "/Projet8_Portfolio/static/media/MonVieuxGrimoire.789772788477b1babb15.png",
+    "static/media/js_logo.png": "/Projet8_Portfolio/static/media/js_logo.b782d6823a63f2ac4621.png",
+    "static/media/figma_logo.png": "/Projet8_Portfolio/static/media/figma_logo.9b39112c8f88f528cbe4.png",
+    "static/media/html_logo.png": "/Projet8_Portfolio/static/media/html_logo.8e49803ef2a86f20675f.png",
+    "static/media/nodejs_logo.png": "/Projet8_Portfolio/static/media/nodejs_logo.cc2defa6e479679784c7.png",
+    "static/media/terminal_logo.png": "/Projet8_Portfolio/static/media/terminal_logo.50b4269475b190016244.png",
+    "static/media/github_logo.png": "/Projet8_Portfolio/static/media/github_logo.22281fe83ad215821952.png",
+    "static/media/react_logo.png": "/Projet8_Portfolio/static/media/react_logo.dcaf883c6984253b099d.png",
+    "static/media/iconLocalisation.jpg": "/Projet8_Portfolio/static/media/iconLocalisation.93fbb50473948fe8ad9c.jpg",
+    "index.html": "/Projet8_Portfolio/index.html",
+    "main.ce025a03.css.map": "/Projet8_Portfolio/static/css/main.ce025a03.css.map",
+    "main.e4bfaabf.js.map": "/Projet8_Portfolio/static/js/main.e4bfaabf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce025a03.css",
+    "static/js/main.e4bfaabf.js"
+  ]
+}
