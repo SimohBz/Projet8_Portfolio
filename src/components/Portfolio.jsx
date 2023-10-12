@@ -180,7 +180,7 @@ const Portfolio = () => {
                     
                     <h6>Compétences employés :</h6>
                     <ul>
-                        <li>Développer le site Portfolio avec react</li>
+                        <li>Développer le site Portfolio avec js et react</li>
                         <li>lier le site avec l'ensemble des projets de développements réalisés</li>
                         <li>Déployer le site statique en ligne</li>
                     </ul>
