@@ -19,7 +19,7 @@ const Skills = () => {
     return (
         <div className="skills">
             <h2>Mes Compétences</h2>
-            <p>Mon Univers Informatique : Créativité, Performance et Qualité</p>
+            <p>Mon univers informatique : Créativité, Performance et Qualité</p>
             <ul>
                 <li>
                     <FontAwesomeIcon icon={faKeyboard} />

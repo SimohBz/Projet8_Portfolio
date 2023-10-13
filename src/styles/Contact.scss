@@ -71,3 +71,49 @@
         }
     }
 }
+
+@media screen and (max-width: 440px) {
+    .contact {
+        h2{
+            font-size: 25px;
+        }
+
+        p{
+            font-size: 16px;
+        }
+
+        .contactEmail {
+            .mailTo {
+                font-weight: bold;
+                font-size: medium;
+                margin-right: 45px;
+            }
+            .iconeMail{
+                visibility: hidden;
+            }
+
+        }
+        .contactPhone {
+            .phoneNumber {
+                font-weight: bold;
+                font-size: medium;
+                margin-right: 45px;
+                margin-top: -15px;
+            }
+            .iconePhone{
+                visibility: hidden;
+            }
+        }
+        .localisation {
+            .toLocalisation {
+                font-weight: bold;
+                font-size: medium;
+                margin-right: 45px;
+                margin-top: -60px;
+            }
+            .iconeLocalisation{
+                visibility: hidden;
+            }
+        }
+    }
+}

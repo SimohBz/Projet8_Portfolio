@@ -220,18 +220,32 @@
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 440px) {
+    .portfolio{
+        h2, p{
+            font-size: 25px;
+        }
+    }
+    .modalContent {
+        width: 75%;
+        height: 75%;
+    }
+    
     .modalText {
+        .modalTitle{
+            font-size: 20px;
+            font-weight: bold;
+        }
         .modalDescription {
             .buttonConsultation {
                 flex-direction: column;
                 .codeLink {
-                    width: 43%;
+                    width: 55%;
                     margin: auto;
                     text-align: center;
                     margin-bottom: 20px;
-                    font-size: 16px;
-                    padding: 10px 10px;
+                    font-size: 10px;
+                    padding: 5px 5px;
                 }
             }
         }
