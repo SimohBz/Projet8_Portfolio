@@ -25,12 +25,11 @@ const Portfolio = () => {
                     <p> Développeur Web Frontend</p>
 
                     <h6>Mission:</h6>
-                    <p>Installation d'environnement de développement front-end en intérgant du contenu avec HTML et CSS conformément à une maquette.
-                    Implémenter une interface responsive.</p>
+                    <p>Installation d'environnement de développement front-end en intégrant du contenu avec HTML et CSS conformément à une maquette. Implémenter une interface responsive.</p>
 
                     <h6>Difficultés rencontrées:</h6>
                     <p>Redimensionner les images, et bien gérer le côté responsive de la page.
-                    J'ai donc du apprendre les bonnes pratiques pour l'utilisation du HTML-5 et CSS-3 pour bien définir les dimenssions en % et utiliser la fonction Display Flex du CSS afin d'avoir une page conforme à la maquette et correctement responsive.</p>
+                    J'ai donc du apprendre les bonnes pratiques pour l'utilisation du HTML5 et CSS3 pour bien définir les dimenssions en % et utiliser la fonction Display Flex du CSS afin d'avoir une page conforme à la maquette et correctement responsive.</p>
                     
                     <h6>Compétences employés :</h6>
                     <ul>
@@ -57,7 +56,7 @@ const Portfolio = () => {
                     <p> Développeur Web Frontend</p>
 
                     <h6>Mission:</h6>
-                    <p>Développer la page de présentation des travaux de l'architecte (code HTML fourni), la page de connexion de l'administrateur du site et la modale de téléchargement de nouveaux travaux (code à créer from scratch).</p>
+                    <p>Développer la page de présentation des travaux de l'architecte, la page de connexion de l'administrateur du site et la modale de téléchargement de nouveaux travaux (HTML fourni, code js à créer from scratch).</p>
 
                     <h6>Difficultés rencontrées:</h6>
                     <p>Apprendre le language JavaScript et créer des fonctions à partir de zéro, notamment les modales. J'ai du faire beaucoup de lectures, d'exercices et de recherches avant de me lancer dans le code. Les console-log m'ont beaucoup aidé à voir où il y avait des problèmes et à avancer pas à pas.</p>
@@ -70,7 +69,7 @@ const Portfolio = () => {
                     </ul>
                     <div className="buttonConsultation">
                         <a href="https://github.com/SimohBz/Projet3_Architecte-sophie-bluel.git" target="_blank" rel="noopener noreferrer" className="codeLink">Consulter le code</a>
-                        <a href=" # " target="_blank" rel="noopener noreferrer" className="codeLink">Visiter le site</a>
+                        <a href=" https://simohbz.github.io/Projet3_Architecte-sophie-bluel/ " target="_blank" rel="noopener noreferrer" className="codeLink">Ce site n'est pas en ligne</a>
                     </div>
                 </div>
             ),
@@ -89,7 +88,7 @@ const Portfolio = () => {
                     <p>Optimiser les performances du site de la cliente, son référencement (SEO) ainsi que son accessibilité et débugger quelques fonctionnalités défaillantes dans le code HTML et Js.</p>
 
                     <h6>Difficultés rencontrées:</h6>
-                    <p>Non maîtrise des outils et techniques d'analyse des performances et de l'accessibilité. j'a appris à réaliser des audits pertinents avec "Lighthouse" pour les performances, et "Wave" pour l’accessibilité ainsi que l'implémentation des "meta" pour les réseaux sociaux, la gestion des mot-clé, et la minification du code JS et CSS. </p>
+                    <p>La découverte des outils et techniques d'analyse des performances et de l'accessibilité. j'a appris à réaliser des audits pertinents avec "Lighthouse" pour les performances, et "Wave" pour l’accessibilité ainsi que l'implémentation des "meta" pour les réseaux sociaux, la gestion des mot-clé, et la minification du code JS et CSS. </p>
                     
                     <h6>Compétences employés :</h6>
                     <ul>
@@ -109,7 +108,7 @@ const Portfolio = () => {
             title: "Site: Kasa - Location immobilière",
             description: (
                 <div>
-                    <p>Kasa est l'un des leaders de la location d'appartements entre particuliers. Ils ont lancé une refonte totale de leur site pour passer à une stack complète en JavaScript avec Node.js côté back-end et React côté frontend. </p>
+                    <p>Kasa, un des leaders de la location d'appartements entre particuliers. Ils ont lancé une refonte totale de leur site pour passer à une stack complète en JavaScript avec Node.js côté back-end et React côté frontend. </p>
 
                     <h6>Poste:</h6>
                     <p> Développeur Web Frontend</p>
@@ -118,7 +117,7 @@ const Portfolio = () => {
                     <p>Démarrer le projet React et développer l'ensemble de l'application, y compris les composants et les routes, en suivant la maquette fournie.</p>
 
                     <h6>Difficultés rencontrées:</h6>
-                    <p>Bien comprendre React et son côté modulaire, afin de bien découper les différentes parties en composant. La construction du Carrousel et les Collapse ont également été compliqués. Il a fallu avoir une bonne vision d'ensemble du site afin de bien définir les différents composants parents, enfants selon les notions props et state. </p>
+                    <p>Bien comprendre React et son côté modulaire, afin de bien découper les différentes parties en composant. La construction du Carrousel et les Collapse ont également été challengeants. Il a fallu avoir une bonne vision d'ensemble du site afin de bien définir les différents composants parents, enfants selon les notions props et state. </p>
                     
                     <h6>Compétences employés :</h6>
                     <ul>
@@ -128,7 +127,7 @@ const Portfolio = () => {
                     </ul>
                     <div className="buttonConsultation">
                         <a href="https://github.com/SimohBz/Projet6_Application-kasa-Location.git" target="_blank" rel="noopener noreferrer" className="codeLink">Consulter le code</a>
-                        <a href=" https://simohbz.github.io/Projet6_Application-kasa-Location/ " target="_blank" rel="noopener noreferrer" className="codeLink">Visiter le site</a>
+                        <a href="https://simohbz.github.io/Projet6_Application-kasa-Location/" target="_blank" rel="noopener noreferrer" className="codeLink">Visiter le site</a>
                     </div>
                 </div>
             ),
@@ -138,16 +137,16 @@ const Portfolio = () => {
             title: "Site: Mon Vieux Grimoire - Notation de livres",
             description: (
                 <div>
-                    <p>Le Vieux Grimoire est une petite chaîne de librairies qui souhaite lancer un site internet de référencement et de notation de livres. </p>
+                    <p>Le Vieux Grimoire, une petite chaîne de librairies qui souhaite lancer un site internet de référencement et de notation de livres. </p>
 
                     <h6>Poste:</h6>
                     <p> Développeur Backend freelance</p>
 
                     <h6>Mission:</h6>
-                    <p>Collaborer avec un développeur frontend pour combiner les compétences sur un nouveau projet appelé "Mon Vieux Grimoire". Le travail est le développement de toute la partie back-end avec Nodejs.</p>
+                    <p>Collaborer avec un développeur frontend pour combiner les compétences sur un nouveau projet appelé "Mon Vieux Grimoire". Le travail est de réaliser le développement de toute la partie back-end avec Nodejs.</p>
 
                     <h6>Difficultés rencontrées:</h6>
-                    <p>La découverte totale du secteur back-end. Il a fallu comprendre comment fonctionne une API, les connexions entre le serveur et la basse de donnée, la définition et la gestion des routes, les middlewares et les fonctions des controllers.</p>
+                    <p>La découverte totale du coté back-end. Il a fallu comprendre comment fonctionne une API, les connexions entre les serveurs et les basses de données, la définition et la gestion des routes, les middlewares et les fonctions des controllers.</p>
                     
                     <h6>Compétences employés :</h6>
                     <ul>
@@ -157,7 +156,7 @@ const Portfolio = () => {
                     </ul>
                     <div className="buttonConsultation">
                         <a href="https://github.com/SimohBz/Projet7_Mon-Vieux-Grimoire-main.git" target="_blank" rel="noopener noreferrer" className="codeLink">Consulter le code</a>
-                        <a href=" # " target="_blank" rel="noopener noreferrer" className="codeLink">Visiter le site</a>
+                        <a href=" https://simohbz.github.io/Projet7_Mon-Vieux-Grimoire-main/ " target="_blank" rel="noopener noreferrer" className="codeLink">Ce site n'est pas en ligne</a>
                     </div>
                 </div>
             ),
@@ -167,7 +166,7 @@ const Portfolio = () => {
             title: "Site: Mon Portfolio",
             description: (
                 <div>
-                    <p>Ce projet a pour but de préparer au mieux la recherche d’emploi pour un poste de  développeur Frontend ou Backend Junior. </p>
+                    <p>Ce projet a pour but de préparer au mieux la recherche d’emploi pour un poste de développeur Frontend ou Backend Junior. </p>
 
                     <h6>Poste:</h6>
                     <p> Développeur Full-Stack Junior</p>
@@ -176,7 +175,7 @@ const Portfolio = () => {
                     <p>Faire un bilan des compétences à l'aide de la carte mentale, puis identifier les postes sur lesquels on souhaite postuler. En suite, créer un portfolio et le publier en ligne pour mettre en avant le profil auprès des potentiels recruteurs.</p>
 
                     <h6>Difficultés rencontrées:</h6>
-                    <p>Techniquement, c'était relativement sans difficulté car l'encodage du Portfolio est basé sur des modèles de développement déjà réalisés au cours de la formation. Le challenge a été de mettre en valeur les nouveaux acquis professionnels pour donner envie de recruter un profil junior (manque de pratique). La capitalisation avec ma longue et riche expérience dans la gestion de projet indus, qui constitue un tronc commun avec le monde de l'informatique, sera un de mes grands atouts.</p>
+                    <p>Techniquement, c'était relativement sans difficulté car l'encodage du Portfolio est basé sur des modèles de développement déjà réalisés au cours de la formation. Le challenge a été de mettre en valeur les nouveaux acquis professionnels pour donner envie de recruter un profil junior manquants de pratique.</p>
                     
                     <h6>Compétences employés :</h6>
                     <ul>

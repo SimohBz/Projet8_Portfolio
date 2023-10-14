@@ -19,7 +19,11 @@ const Skills = () => {
     return (
         <div className="skills">
             <h2>Mes Compétences</h2>
-            <p>Mon univers informatique : Créativité, Performance et Qualité</p>
+                
+            <h5>"Grâce à mes 20 années d'expérience dans la gestion de projets industriels à l'échelle internationale, j'ai acquis une expertise solide qui constitue un socle de compétences, unissant harmonieusement le monde de l'industrie et de l'informatique. Cela me place en position de leader pour contribuer à façonner l'avenir de la transformation numérique."</h5>
+
+            <p>Mon univers informatique : Créativité, Performance et Qualité.</p>
+            
             <ul>
                 <li>
                     <FontAwesomeIcon icon={faKeyboard} />

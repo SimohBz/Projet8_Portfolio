@@ -16,17 +16,23 @@
         width: 20%;
         a {
             img {
-                background-color: white;
-                border-radius: 15px;
+                width: 50%;
             }
         }
+    }
+
+    .contactLink :hover{
+        transform: scale(1.1);
     }
 }
 
 @media screen and (max-width: 720px) {
     .footer {
         .contactLink {
-            width: 30%;
+            width: 40%;
+        }
+        p {
+            font-size: 15px;
         }
     }
 }
@@ -34,10 +40,10 @@
 @media screen and (max-width: 440px) {
     .footer {
         p {
-            font-size: 14px;
+            font-size: 10px;
         }
         .contactLink {
-            width: 38%;
+            width: 30%;
         }
     }
 }

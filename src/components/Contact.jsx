@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Contact.scss";
 import iconeMail from "../assets/icone/iconMail.png";
-import iconeLocalisation from "../assets/icone/iconLocalisation.jpg";
+import iconeLocalisation from "../assets/icone/iconLocalisation.png";
 import iconePhone from "../assets/icone/iconPhone.png";
 
 const Contact = () => {
@@ -12,9 +12,9 @@ const Contact = () => {
         <div className="contact">
             <h2>Mes atouts et liens de contactes</h2>
             <div className="contactDescription">
-            <p>Collaborateur enthousiaste, curieux et résolu, j'aime travailler en équipe pour résoudre des problèmes complexes et explorer de nouvelles idées. Ma passion pour la programmation se traduit par une approche méthodique pour la résolution de problèmes et la création de code propre.</p>
+            <h5>Collaborateur enthousiaste, curieux et résolu, j'aime travailler en équipe pour résoudre des problèmes complexes et explorer de nouvelles idées. Ma passion pour la programmation se traduit par une approche méthodique pour la résolution de problèmes et la création de code propre.</h5>
 
-            <p>Si vous cherchez un membre dynamique pour renforcer votre équipe de développement web, je suis prêt à faire mes preuves et à apporter une contribution précieuse à vos projets. </p>
+            <h6>Si vous cherchez un membre dynamique pour renforcer votre équipe de développement web, je suis prêt à faire mes preuves et à apporter une contribution précieuse à vos projets. </h6>
             </div>
 
             <div className="contactEmail">
