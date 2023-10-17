@@ -26,7 +26,7 @@ const Header = ({ onClickHome }) => {
                     </li>
                     <li className="navItem">
                         <Link to="contact" smooth={true} duration={1000}>
-                            <span className="navItemContent">Contact</span>
+                            <span className="navItemContent">Contacts</span>
                         </Link>
                     </li>
                 </ul>

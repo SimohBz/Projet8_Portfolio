@@ -1,5 +1,5 @@
 @mixin h2-common-style {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
   color: rgb(121, 156, 165);
@@ -14,7 +14,7 @@
 @mixin link-common-style {
   text-decoration: none;
   color: rgb(121, 156, 165);
-  font-size: 20px;
+  font-size: 15px;
   &:hover {
     color: rgb(53, 80, 124);
     font-weight: bold;
@@ -35,6 +35,9 @@
   color: white;
   border-radius: 25px;
   box-shadow: 0px 30px 100px rgb(121, 156, 165);
+  border: 1px black solid;
+  margin-top: 10px;
+  margin-bottom: 10px;
   
 }
 

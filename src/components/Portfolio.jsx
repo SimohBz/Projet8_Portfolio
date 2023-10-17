@@ -207,9 +207,9 @@ const Portfolio = () => {
     return (
         <div className="portfolio">
             <h2>Mon Portfolio</h2>
-            <p className="portfolioDescription">
-                Retrouverez ci-dessous les projets que j'ai réalisés au cours de ma dérniére formation en développement WEB:
-            </p>
+            <h5 className="portfolioDescription">
+                Projets réalisés au cours de ma dérniére formation en développement WEB
+            </h5>
             <div className="imageProject">
                 {projects.map((project, index) => (
                     <div

@@ -4,8 +4,21 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
+
     h2 {
         @include h2-common-style;
+    }
+
+    h5{
+        font-size: 13px;
+        color:  white;
+        border: 1px solid rgb(121, 156, 165);
+        border-radius: 25px;
+        font-style: italic;
+        text-align: center;
+        padding: 10px 5px;
+        margin-left: 40px;
+        margin-right: 40px;
     }
     
     ul {
@@ -21,9 +34,9 @@
             text-align: center;
             justify-content: center;
             width: 30%;
-            height: 350px;
+            height: 250px;
             background-color: rgb(53, 80, 124);
-            font-size: 30px;
+            font-size: 20px;
             border-radius: 25px;
             position: relative;
             box-shadow: 15px 15px 15px rgb(121, 156, 165);
@@ -41,16 +54,15 @@
             .hover-text {
                 visibility: hidden;
                 color: rgb(255, 255, 255);
-                font-size:25px;
                 position: absolute; 
                 top: 60%;
                 left: 50%;
                 transform: translate(-50%, -50%); 
                 width: 95%;
-                height: 85%;
+                height: 95%;
             }
             .svg-inline--fa {
-                font-size: 55px;
+                font-size: 40px;
                 margin-top: 15px;
             }
         }
@@ -76,29 +88,13 @@
     }
 }
 
-.skills p{
-    text-align: center;
-}
-
-h5{
-    font-size: 20px;
-    font-weight: normal;
-    color:  rgba(121, 156, 165);
-    border: 1px white solid;
-    border-radius: 25px;
-    padding: 20px;
-    font-style: italic;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-@media screen and (max-width: 1550px) {
+@media screen and (max-width: 1050px) {
     .skills {
         ul {
             li {
                 &:hover {
                     .hover-text {
-                        font-size: 25px;
+                        font-size: 17px;
                     }
                 }
             }
@@ -106,58 +102,69 @@ h5{
     }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 720px) {
     .skills {
+
+        h2{
+            font-size: 20px;
+            margin-bottom: auto;
+        }
+
+        h5{
+            font-size: 15px;
+            margin-bottom: auto;
+        }
+
         ul {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
+
             li {
-                width: 35%;
-                margin: 10px;
+                width: 45%;
+                height: 200px;
+                &:hover {
+                    .hover-text {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            h3{
+                font-size: 15px;
+                font-weight: bold;
             }
         }
+
     }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 500px) {
     .skills {
-        ul {
-            li {
-                width: 70%;
-            }
-        }
-        .skillsLogo {
-            display: grid;
-            grid-template-rows: repeat(2, 1fr);
-            grid-template-columns: repeat(4, 1fr); 
-            gap: 10px;
-            img {
-                width: 60%;
-                margin: auto;
-            }
-        }
-    }
-}
 
-@media screen and (max-width: 440px) {
-    .skills {
         ul {
             li {
-                width: 85%;
+                width: 90%;
+                height: 170px;
             }
         }
-        h2, p{
-            font-size: 20px;
-        }
-        h3{
-            font-size: 20px;
-            font-weight: 550;
-        }
+        
         h5{
-            font-size: 15px;
+            font-size: 13px;
+        }
+  
+        .skillsLogo {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            margin: auto;
+
+            img {
+                width: 7%;
+                padding: 15px;
+            }
         }
     }
-    
 }

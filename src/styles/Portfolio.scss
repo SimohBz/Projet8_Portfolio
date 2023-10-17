@@ -5,6 +5,18 @@
         @include h2-common-style;
     }
 
+    h5{
+        font-size: 13px;
+        color:  white;
+        border: 1px solid rgb(121, 156, 165);
+        border-radius: 25px;
+        font-style: italic;
+        text-align: center;
+        padding: 10px 5px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
     .portfolioDescription {
         text-align: center;
         margin-bottom: 60px;
@@ -20,7 +32,7 @@
             position: relative;
             overflow: hidden;
             width: 100%;
-            height: 450px;
+            height: 400px;
             box-shadow: 15px 15px 15px rgb(121, 156, 165);
             border: rgb(53, 80, 124) solid 1px;
             border-radius: 25px;
@@ -59,8 +71,14 @@
                     text-align: center;
                     color: rgb(53, 80, 124);
                     z-index: 1;
-                    font-weight: bolder;
-                    border-bottom: none;
+                    font-weight:bolder;
+                    font-family:fantasy;
+                    font-size: 20px;
+                    padding: 7px;
+                    margin: 5px;
+                    border-radius: 25px;
+                    background-color: rgba(121, 156, 165, 0.8);;
+                    width: 85%;
                 }
             }
             
@@ -83,6 +101,7 @@
 
 .modalContent {
     background-color: rgb(53, 80, 124);
+    border: white 1px solid;
     padding: 25px;
     border-radius: 25px;
     position: relative;
@@ -91,14 +110,8 @@
     overflow: auto;
     text-align: center;
     outline: none; 
-    h6{
-        color: rgba(121, 156, 165);
-        font-size: 15px;
-        font-weight: bold;
-        text-align: left;
-        margin-bottom: -13px;
     }
-}
+
 
 .modalOverlay {
     @include overlay-common-style;
@@ -124,27 +137,34 @@
 
 .modalText {
     h2 {
-        font-size: 25px;
-        margin-top: 0;
-        margin-bottom: -5px;
+        font-size: 20px;
+        border-bottom: white 1px solid;
     }
 
     .modalDescription {
-        p {
+            h6{
+            color: rgba(121, 156, 165);
             font-size: 15px;
-            text-align: start;
-            margin-bottom: -15px;
-        }
-
-        ul {
-            padding-inline-start: 0;
-            margin-top: 15px;
-            li {
-               font-size: 15px;
-               text-align: start;
-               color: white;
+            font-weight: bold;
+            text-align: left;
+            margin-bottom: -13px;
             }
-        }
+
+            p {
+                font-size: 15px;
+                text-align: start;
+                margin-bottom: -1px;
+            }
+    
+            ul {
+                padding-inline-start: 0;
+                margin-top: 15px;
+                li {
+                   font-size: 15px;
+                   text-align: start;
+                   color: white;
+                }
+            }
 
         .buttonConsultation {
             @include contact-common-style;
@@ -152,15 +172,16 @@
             .codeLink {
                 @include codeLink-common-style;
                 text-decoration: none;
-                padding: 10px 20px;
                 border-radius: 25px;
                 display: inline-block;
                 font-weight: bold;
                 font-size: 11px;
-                text-align: left;
+                text-align: center;
                 position: relative; 
                 overflow: hidden;
                 color: rgba(121, 156, 165);
+                margin-top: 25px;
+                padding: 7px;
             }
             .codeLink:before,
             .codeLink:after {
@@ -180,13 +201,12 @@
                 transform: translateY(0);
                 transform: scaleY(-1);
                 background-color: rgba(121, 156, 165);
+                border: white 2px solid;
+                border-radius: 25px;
             }
         }   
     }
-    h2{
-        padding: 5px;
-        border-bottom: white 1px solid;
-    }
+    
 }
 
 @media screen and (max-width: 1110px) {
@@ -201,54 +221,83 @@
 
 @media screen and (max-width: 720px) {
     .portfolio {
+        h2 {
+            font-size: 20px;
+        }
+
+        h5 {
+            font-size: 15px;
+        }
+
         .imageProject {
             grid-template-columns: 1fr;
             grid-template-rows: repeat(5, 1fr);
             justify-content: center;
+            margin-top: -25px;
             .portfolioImageContainer {
-                height: 100%;
+                width: 75%;
+                height: 300px;
+                margin: auto;
             }
         }
     }
 
-    .modalText {
-        .modalDescription {
-            .buttonConsultation {
-                width: 100%;
+    .modalContent{
+        width: 70%;
+        height: 70%;
+    }
+
+    .modalText{
+        .modalDescription{
+            h6, p{
+                font-size: 13px;
+            }
+            ul {
+                li {
+                font-size: 13px;
+                }
             }
         }
     }
+      
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 420px) {
     .portfolio{
-        h2, p{
-            font-size: 25px;
+        h5{
+        font-size: 13px;
         }
     }
     .modalContent {
-        width: 75%;
-        height: 75%;
+        width: 65%;
+        height: 65%;
     }
     
     .modalText {
         .modalTitle{
-            font-size: 20px;
+            font-size: 13px;
             font-weight: bold;
         }
-        .modalDescription {
+        .modalDescription{
+            h6, p{
+                font-size: 10px;
+                }
+
+            ul {
+               li {
+                font-size: 10px;
+                 }
+                }
+
             .buttonConsultation {
-                flex-direction: column;
-                .codeLink {
-                    width: 55%;
+                    .codeLink {
                     margin: auto;
                     text-align: center;
-                    margin-bottom: 20px;
-                    font-size: 10px;
-                    padding: 5px 5px;
-                }
+                     font-size: 8px;
+                 }
             }
         }
+            
     }
 
 }

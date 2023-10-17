@@ -20,25 +20,23 @@ const Skills = () => {
         <div className="skills">
             <h2>Mes Compétences</h2>
                 
-            <h5>"Grâce à mes 20 années d'expérience dans la gestion de projets industriels à l'échelle internationale, j'ai acquis une expertise solide qui constitue un socle de compétences, unissant harmonieusement le monde de l'industrie et de l'informatique. Cela me place en position de leader pour contribuer à façonner l'avenir de la transformation numérique."</h5>
+            <h5>Mon univers informatique: Créativité, Performance et Qualité.</h5>
 
-            <p>Mon univers informatique : Créativité, Performance et Qualité.</p>
-            
             <ul>
                 <li>
                     <FontAwesomeIcon icon={faKeyboard} />
                     <h3>Rédaction Web</h3>
-                    <span className="hover-text">Création de contenus de qualité optimisée pour le web (test et debugging continue). Utilisation des techniques de référencement (SEO) assurant performance, efficacité et garantissant un maximum de visibilité.</span>
+                    <span className="hover-text">Création de contenus de qualité optimisée pour le web (test et debugging inclus). Utilisation des techniques de référencement (SEO) assurant performance, efficacité et garantissant visibilité maximale.</span>
                 </li>
                 <li>
                     <FontAwesomeIcon icon={faCode} />
                     <h3>Développement Web</h3>
-                    <span className="hover-text">Utilisation de technologies performantes dans un monde numérique en constante évolution, du coté front-end et back-end, pour concevoir des solutions web puissantes, intuitives et esthétiques.  </span>
+                    <span className="hover-text">Utilisation de technologies performantes dans un monde numérique en constante évolution, du coté front-end et back-end. Concevoir des solutions web puissantes, intuitives et esthétiques.  </span>
                 </li>
                 <li>
                     <FontAwesomeIcon icon={faCodeBranch} />
                     <h3>Versionnage</h3>
-                    <span className="hover-text">Utilisation des systèmes de versionnage avancés (Github) pour suivre les modifications, collaborer efficacement et déployer les mises à jour en toute sécurité. Mettre les projets en ligne dans un processus fluide et sécurisé.</span>
+                    <span className="hover-text">Utilisation des systèmes de versionnage avancés (Github) pour suivre les modifications, collaborer efficacement et déployer les mises à jour en toute sécurité. Déploiment des projets en ligne en un processus fluide et sécurisé.</span>
                 </li>
             </ul>
             <div className="skillsLogo">

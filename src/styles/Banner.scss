@@ -25,36 +25,42 @@
     }
 
     .description {
-        width: 60%;
-        
-        h2 {
-          font-size: 45px;
-          color: white;
+        width: 77%;
+        h3, p {
+          font-size: 20px;
         }
     }
   }
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 1200px) {
     .banner {
       flex-direction: column;
 
       .bannerImg {
-        width: 36%;
+        width: 30%;
       }
 
       .description {
         width: 95%;
-        h2 {
-          font-size:25px;
-        }
-        h3, P {
-          font-size:20px;
-        }
       }
     }
   }
   
-  
+  @media screen and (max-width: 440px) {
+    .banner {
+      .bannerImg {
+        width: 25%;
+        margin-top: -50px;
+        margin-bottom: 10px;
+      }
+
+      .description {
+        h3, p{
+          font-size:15px;
+        }
+      }
+    }
+  }
   
   
   

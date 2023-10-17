@@ -7,19 +7,14 @@
     }
 
     h5{
-        font-size: 20px;
-        font-weight: normal;
-        color:  rgba(121, 156, 165);
-        border: 1px white solid;
+        font-size: 13px;
+        color:  white;
+        border: 1px solid rgb(121, 156, 165);
         border-radius: 25px;
-        padding: 20px;
         font-style: italic;
-        margin: 0px;
-    }
+        text-align: center;
+        padding: 10px 5px;
 
-    h6{
-        color: white;
-        font-weight: 300;
     }
 
     .contactDescription {
@@ -30,37 +25,37 @@
 
     .contactEmail {
         @include contact-common-style;
-        width: 23%;
-        margin-bottom: 30px;
+        width: 30%;
+        margin-bottom: 25px;
         .iconeMail {
-            width: 40px;
+            width: 35px;
         }
         .mailTo {
-            @include link-common-style;       
+            @include link-common-style; 
+            margin-top: 15px;   
         }
     }
     
     .contactPhone {
         @include contact-common-style;
-        width: 16%;
+        width: 20%;
         margin-bottom: 15px;
         .iconePhone {
             width: 40px;
-            height: 41px;
         }
         .phoneNumber {
-            font-size: 20px;
+            font-size: 15px;
             color: rgb(121, 156, 165);
         }
     }
 
     .localisation {
         @include contact-common-style;
-        width: 11%;
+        width: 17%;
+        margin-top: 25px;
         align-items: center;
         .iconeLocalisation {
             width: 40px;
-            margin-bottom: 10px;   
         }
         .toLocalisation {
             @include link-common-style;
@@ -68,69 +63,70 @@
     }
 }
 
-@media screen and (max-width: 1265px) {
+@media screen and (max-width: 720px) {
     .contact {
+        h2{
+            font-size: 20px;
+        }
+
+        h5{
+            font-size: 15px;
+        }
+
         .contactEmail {
+            .iconeMail {
+                width: 25px;
+            }
             .mailTo {
+                font-size: 15px;
                 margin-left: 15px;
             }
         }
         .contactPhone {
+            .iconePhone {
+                width: 30px;
+            }
             .phoneNumber {
-                margin-left: 10px;
+                font-size: 15px;
+                margin-left: 15px;
             }
         }
         .localisation {
+            .iconeLocalisation {
+                width: 30px;
+            }
             .toLocalisation {
-                margin-left: 10px;
+                font-size: 15px;
+                margin-left: 15px;
             }
         }
     }
+    
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 420px) {
     .contact {
         h2{
-            font-size: 25px;
+            font-size: 20px;
         }
 
-        h5, h6{
-            font-size: 20px;
-            width: 100%;
-            margin-left: -20px;
+        h5{
+            font-size: 13px;
         }
 
         .contactEmail {
             .mailTo {
-                font-weight: bold;
-                font-size: medium;
-                margin-right: 45px;
+                font-size: 13px;
             }
-            .iconeMail{
-                visibility: hidden;
-            }
-
         }
         .contactPhone {
             .phoneNumber {
-                font-weight: bold;
-                font-size: medium;
-                margin-right: 45px;
-                margin-top: -15px;
-            }
-            .iconePhone{
-                visibility: hidden;
+                font-size: 13px;
             }
         }
         .localisation {
             .toLocalisation {
-                font-weight: bold;
-                font-size: medium;
-                margin-right: 45px;
-                margin-top: -60px;
-            }
-            .iconeLocalisation{
-                visibility: hidden;
+                font-size: 13px;
             }
         }
     }

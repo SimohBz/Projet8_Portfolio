@@ -10,11 +10,10 @@ const Contact = () => {
 
     return (
         <div className="contact">
-            <h2>Mes atouts et liens de contactes</h2>
+            <h2>Contacts</h2>
             <div className="contactDescription">
-            <h5>Collaborateur enthousiaste, curieux et résolu, j'aime travailler en équipe pour résoudre des problèmes complexes et explorer de nouvelles idées. Ma passion pour la programmation se traduit par une approche méthodique pour la résolution de problèmes et la création de code propre.</h5>
-
-            <h6>Si vous cherchez un membre dynamique pour renforcer votre équipe de développement web, je suis prêt à faire mes preuves et à apporter une contribution précieuse à vos projets. </h6>
+            <h5>Je suis enthousiaste à l'idée de collaborer avec vous et de contribuer de manière significative à vos projets. N'hésitez pas à me contacter pour discuter de nos opportunités de travail ensemble.</h5>
+        
             </div>
 
             <div className="contactEmail">
