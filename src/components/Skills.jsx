@@ -20,7 +20,9 @@ const Skills = () => {
         <div className="skills">
             <h2>Mes Compétences</h2>
                 
-            <h5>Mon univers informatique: Créativité, Performance et Qualité.</h5>
+            <h5>Mon univers informatique:<br></br>
+                 créativité, performance et qualité.</h5>
+            
 
             <ul>
                 <li>

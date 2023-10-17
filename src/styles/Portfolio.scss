@@ -168,20 +168,21 @@
 
         .buttonConsultation {
             @include contact-common-style;
-            width: 50%;
+            width: 100%;
+            gap: 15px;
             .codeLink {
                 @include codeLink-common-style;
+                border: solid 2px rgba(121, 156, 165);
                 text-decoration: none;
+                padding: 7px 10px;
                 border-radius: 25px;
                 display: inline-block;
                 font-weight: bold;
-                font-size: 11px;
+                font-size: 10px;
                 text-align: center;
                 position: relative; 
                 overflow: hidden;
-                color: rgba(121, 156, 165);
-                margin-top: 25px;
-                padding: 7px;
+                color: rgb(53, 80, 124);
             }
             .codeLink:before,
             .codeLink:after {
@@ -194,6 +195,7 @@
         
             .codeLink:hover {
                 transform: rotateX(180deg); 
+                border: solid 2px white;
             }
         
             .codeLink:hover:before,
@@ -201,8 +203,6 @@
                 transform: translateY(0);
                 transform: scaleY(-1);
                 background-color: rgba(121, 156, 165);
-                border: white 2px solid;
-                border-radius: 25px;
             }
         }   
     }
@@ -290,10 +290,14 @@
                 }
 
             .buttonConsultation {
+                flex-wrap: wrap;
+                gap: 10px;
                     .codeLink {
+                    
                     margin: auto;
                     text-align: center;
                      font-size: 8px;
+                     
                  }
             }
         }

@@ -3,7 +3,7 @@
 .contact {
     h2 {
         @include h2-common-style;
-        margin-top: 90px;
+        margin-top: 70px;
     }
 
     h5{
@@ -14,45 +14,44 @@
         font-style: italic;
         text-align: center;
         padding: 10px 5px;
-
     }
 
     .contactDescription {
         width: 80%;
         margin: auto;
-        margin-bottom: 90px;
     }
 
     .contactEmail {
         @include contact-common-style;
         width: 30%;
-        margin-bottom: 25px;
+        align-items: center;
         .iconeMail {
             width: 35px;
         }
         .mailTo {
             @include link-common-style; 
-            margin-top: 15px;   
         }
+        padding: 5px 10px 5px 10px;
+        margin:auto;
     }
     
     .contactPhone {
         @include contact-common-style;
         width: 20%;
-        margin-bottom: 15px;
+        align-items: center;
         .iconePhone {
             width: 40px;
         }
         .phoneNumber {
-            font-size: 15px;
-            color: rgb(121, 156, 165);
+            @include link-common-style;
         }
+        padding: 5px 117px 5px 0px;
+        margin:auto;
     }
 
     .localisation {
         @include contact-common-style;
         width: 17%;
-        margin-top: 25px;
         align-items: center;
         .iconeLocalisation {
             width: 40px;
@@ -60,6 +59,8 @@
         .toLocalisation {
             @include link-common-style;
         }  
+        padding: 5px 147px 5px 5px;
+        margin:auto;
     }
 }
 
