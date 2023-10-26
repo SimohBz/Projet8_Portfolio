@@ -9,6 +9,8 @@
     height: 110px;
     p {
         margin: auto;
+        margin-top: 11px;
+        margin-bottom: 11px;
         font-size: 20px;
     }
     .contactLink {
@@ -28,19 +30,36 @@
         transform: scale(1.1);
     }
 }
-
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1440px) {
     .footer {
 
         p {
             font-size: 15px;
         }
         .contactLink {
-            width: 35%;
+            width: 25%;
 
             a {
                 img {
-                    width: 35%;
+                    width: 25%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .footer {
+
+        p {
+            font-size: 13px;
+        }
+        .contactLink {
+            width: 30%;
+
+            a {
+                img {
+                    width: 30%;
                 }
             }
         }

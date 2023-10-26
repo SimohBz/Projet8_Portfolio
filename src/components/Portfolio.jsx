@@ -6,7 +6,6 @@ import SophieBluel from "../assets/projects/SophieBluel.png";
 import NinaCarducci from "../assets/projects/NinaCarducci.png";
 import Kasa from "../assets/projects/Kasa.png";
 import MonVieuxGrimoire from "../assets/projects/MonVieuxGrimoire.png";
-import MonPortfolio from "../assets/projects/MonPortfolio.png";
 
 const Portfolio = () => {
     const [isModalOpen, setModalOpen] = useState(false);
@@ -161,35 +160,7 @@ const Portfolio = () => {
                 </div>
             ),
         },
-        {
-            image: MonPortfolio,
-            title: "Site: Mon Portfolio",
-            description: (
-                <div>
-                    <p>Ce projet a pour but de préparer au mieux la recherche d’emploi pour un poste de développeur Frontend ou Backend Junior. </p>
-
-                    <h6>Poste:</h6>
-                    <p> Développeur Full-Stack Junior</p>
-
-                    <h6>Mission:</h6>
-                    <p>Faire un bilan des compétences à l'aide de la carte mentale, puis identifier les postes sur lesquels on souhaite postuler. En suite, créer un portfolio et le publier en ligne pour mettre en avant le profil auprès des potentiels recruteurs.</p>
-
-                    <h6>Difficultés rencontrées:</h6>
-                    <p>Techniquement, c'était relativement sans difficulté car l'encodage du Portfolio est basé sur des modèles de développement déjà réalisés au cours de la formation. Le challenge a été de mettre en valeur les nouveaux acquis professionnels pour donner envie de recruter un profil junior manquants de pratique.</p>
-                    
-                    <h6>Compétences employés :</h6>
-                    <ul>
-                        <li>Développer le site Portfolio avec js et react</li>
-                        <li>lier le site avec l'ensemble des projets de développements réalisés</li>
-                        <li>Déployer le site statique en ligne</li>
-                    </ul>
-                    <div className="buttonConsultation">
-                        <a href="https://github.com/SimohBz/Projet8_Portfolio.git" target="_blank" rel="noopener noreferrer" className="codeLink">Consulter le code</a>
-                        <a href=" https://simohbz.github.io/Projet8_Portfolio/ " target="_blank" rel="noopener noreferrer" className="codeLink">Visiter le site</a>
-                    </div>
-                </div>
-            ),
-        },
+      
     ];
 
     const openModal = (title, desc) => {
